@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dpmqtlaxbs6qw"]
 
 [ext_resource type="Script" uid="uid://m3mmokcvlgtc" path="res://Scripts/player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://bs3es83v81psu" path="res://Rocky Roads/Enemies/slime_blue.png" id="1_xhfnw"]
+[ext_resource type="Texture2D" uid="uid://bs3es83v81psu" path="res://Assets/ThirdParty/Rocky Roads/Enemies/slime_blue.png" id="1_xhfnw"]
 
 [sub_resource type="Animation" id="Animation_rpqav"]
 resource_name = "Idle"

@@ -5,6 +5,11 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.1.2] - 2025-07-30
+### Añadido
+- Creacion menu basico de pausa del juego
+- Separacion de los assets que se van a usar en: propios y de terceros, para facilitar la atribucion de licencias
+ 
 ## [0.1.1] - 2025-07-15
 ### Añadido
 - Creacion menu principal basico para iniciar el juego

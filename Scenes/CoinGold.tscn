@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cuu4uws6jrerb"]
 
-[ext_resource type="Texture2D" uid="uid://cihtm5bcq6yaw" path="res://Rocky Roads/Objects/coin_gold.png" id="1_fr4g1"]
+[ext_resource type="Texture2D" uid="uid://cihtm5bcq6yaw" path="res://Assets/ThirdParty/Rocky Roads/Objects/coin_gold.png" id="1_fr4g1"]
 [ext_resource type="Script" uid="uid://5oknuwxhyfi5" path="res://Scripts/coin_gold.gd" id="1_sb7cn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jtuk3"]
