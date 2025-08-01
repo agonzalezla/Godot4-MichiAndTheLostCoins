@@ -18,12 +18,14 @@ func _physics_process(_delta: float) -> void:
 	var friction = false
 	
 	if Input.is_action_pressed("ui_right"):
-		sprite.flip_h = true
+		#sprite.flip_h = true
+		sprite.flip_h = false
 		animationPlayer.play("Walk")
 		motion.x = min(motion.x + moveSpeed, maxSpeed)
 		
 	elif Input.is_action_pressed("ui_left"):
-		sprite.flip_h = false
+		#sprite.flip_h = false
+		sprite.flip_h = true
 		animationPlayer.play("Walk")
 		motion.x = max(motion.x - moveSpeed, -maxSpeed)
 		

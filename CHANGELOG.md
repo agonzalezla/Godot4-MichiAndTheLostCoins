@@ -5,6 +5,12 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.1.3] - 2025-08-01
+### Añadido
+- Nuevo sprite para el jugador
+- Se asigna el nombre del juego: "Michi y las monedas perdidas"
+- Agregado el Background al nivel 1 
+
 ## [0.1.2] - 2025-07-30
 ### Añadido
 - Creacion menu basico de pausa del juego
