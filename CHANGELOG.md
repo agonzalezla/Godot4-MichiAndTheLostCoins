@@ -5,6 +5,14 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.1.4] - 2025-08-07
+### Añadido
+- Prototipado musica menu principal
+- Prototipado musica recoger moneda
+- Escena Spike Trap
+- Escena WoodStakesTrap
+- Prototipo nivel 2
+
 ## [0.1.3] - 2025-08-01
 ### Añadido
 - Nuevo sprite para el jugador

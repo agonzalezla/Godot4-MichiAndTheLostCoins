@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/spikes.png-ea4edbaffd572b5f43ebc5b1f1fd2f30.c
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

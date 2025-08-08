@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxnty5ji0g0hj"]
+
+[ext_resource type="Script" uid="uid://iqcffepxvqd7" path="res://Scripts/wood_stakes_trap.gd" id="1_2lsns"]
+[ext_resource type="Texture2D" uid="uid://lwrpp73pmtjk" path="res://Assets/ThirdParty/Rocky Roads/Enemies/wood_stakes.png" id="1_qa7oh"]
+
+[node name="WoodStakesTrap" type="Node2D"]
+script = ExtResource("1_2lsns")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture_filter = 1
+texture = ExtResource("1_qa7oh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-2, -1.1, -6.9, -4.3, -9, -3.2, -9, -2.2, -14.5, 1, -16, 1, -16, 6.1, -13, 14.4, -13, 16, 1.2, 16, 13.2, 15, 16, 15, 16, 12.5, 14, 7.5, 14, 3.6, 4, -0.4, 4, -1.6, 0.799999, -2.3, -2, 3.9)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
