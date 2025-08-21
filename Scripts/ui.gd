@@ -38,5 +38,12 @@ func handlerCoinCollected():
 	# Cambiar de nivel al recoger todas las monedas, detecta el nivel actual y salta al siguiente.
 	if coins == totalCoinsInLevel:
 		await get_tree().create_timer(0.2).timeout
-		get_tree().change_scene_to_file("res://Scenes/Level" + str(int(get_tree().current_scene.name) + 1)  + ".tscn")	
+		#get_tree().change_scene_to_file("res://Scenes/Level" + str(int(get_tree().current_scene.name) + 1)  + ".tscn")	
+		
+		var current_level_num = int(get_tree().current_scene.name)
+		var next_level_path = "res://Scenes/Level" + str(current_level_num + 1) + ".tscn"
 	
+		if FileAccess.file_exists(next_level_path):
+			get_tree().change_scene_to_file(next_level_path)
+		else:
+			get_tree().change_scene_to_file("res://Scenes/ComingSoon.tscn")

@@ -88,22 +88,24 @@ position = Vector2(8, 584)
 
 [node name="Camera2D" parent="Player" instance=ExtResource("3_ehjmi")]
 
-[node name="CoinGold" parent="." instance=ExtResource("4_p4u3k")]
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="CoinGold" parent="Coins" instance=ExtResource("4_p4u3k")]
 position = Vector2(89, 562)
 
-[node name="CoinGold2" parent="." instance=ExtResource("4_p4u3k")]
+[node name="CoinGold2" parent="Coins" instance=ExtResource("4_p4u3k")]
 position = Vector2(176, 569)
 
-[node name="CoinGold3" parent="." instance=ExtResource("4_p4u3k")]
+[node name="CoinGold3" parent="Coins" instance=ExtResource("4_p4u3k")]
 position = Vector2(252, 529)
 
-[node name="CoinGold4" parent="." instance=ExtResource("4_p4u3k")]
+[node name="CoinGold4" parent="Coins" instance=ExtResource("4_p4u3k")]
 position = Vector2(200, 498)
 
-[node name="CoinGold5" parent="." instance=ExtResource("4_p4u3k")]
+[node name="CoinGold5" parent="Coins" instance=ExtResource("4_p4u3k")]
 position = Vector2(71, 464)
 
-[node name="CoinGold6" parent="." instance=ExtResource("4_p4u3k")]
+[node name="CoinGold6" parent="Coins" instance=ExtResource("4_p4u3k")]
 position = Vector2(24, 503)
 
 [node name="SpikeTrap" parent="." instance=ExtResource("5_jriq2")]
