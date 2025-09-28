@@ -5,6 +5,11 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+
+## [0.1.6] - 2025-09-28
+### Añadido
+- Actualizacion del motor Godot a la version 4.5
+
 ## [0.1.5] - 2025-08-20
 ### Añadido
 - Prototipo nivel 3
