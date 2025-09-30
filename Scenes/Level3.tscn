@@ -143,7 +143,7 @@ position = Vector2(197, 2)
 position = Vector2(250, 2)
 
 [node name="SpikeTrap3" parent="Traps" instance=ExtResource("6_084pi")]
-position = Vector2(89, 194)
+position = Vector2(70, 194)
 
 [node name="SpikeTrap4" parent="Traps" instance=ExtResource("6_084pi")]
-position = Vector2(254, 194)
+position = Vector2(128, 194)

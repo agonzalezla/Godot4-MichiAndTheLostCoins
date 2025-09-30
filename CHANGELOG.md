@@ -6,6 +6,10 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
 
+## [0.1.7] - 2025-09-30
+### Corregido
+- Solucionado el error que no permitia pasar de nivel en la version "Web/Windows" 
+
 ## [0.1.6] - 2025-09-28
 ### Añadido
 - Actualizacion del motor Godot a la version 4.5
