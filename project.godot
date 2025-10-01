@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Michi y las monedas perdidas"
+config/name="Michi and The Lost Coins"
 run/main_scene="uid://nkrbmjwht41m"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"

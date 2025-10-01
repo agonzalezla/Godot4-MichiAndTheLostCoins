@@ -5,6 +5,10 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.1.8] - 2025-10-01
+### Añadido
+- Creado el README.md
+- Agregada la licencia (CC BY-NC 4.0)
 
 ## [0.1.7] - 2025-09-30
 ### Corregido
