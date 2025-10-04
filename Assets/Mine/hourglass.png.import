@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://251ac85r85t4"
-path="res://.godot/imported/sun.png-ebfa59b1eca94ce3f59826a0333a5044.ctex"
+uid="uid://dtkxb3r0ii0e3"
+path="res://.godot/imported/hourglass.png-106a0965ba2059838bd1cafbd80d0d8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ThirdParty/Rocky Roads/Deco/sun.png"
-dest_files=["res://.godot/imported/sun.png-ebfa59b1eca94ce3f59826a0333a5044.ctex"]
+source_file="res://Assets/Mine/hourglass.png"
+dest_files=["res://.godot/imported/hourglass.png-106a0965ba2059838bd1cafbd80d0d8e.ctex"]
 
 [params]
 

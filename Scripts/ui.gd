@@ -43,3 +43,15 @@ func go_to_next_level():
 		get_tree().change_scene_to_file(levels[index + 1])
 	else:
 		get_tree().change_scene_to_file("res://Scenes/ComingSoon.tscn")
+		
+
+func _process(delta: float) -> void:
+	var total = GlobalTime.tiempo
+	var horas = int(total / 3600)
+	var minutos = int(total / 60)
+	var segundos = int(total) % 60
+	#var centesimas = int((total - int(total)) * 100)
+	
+	$TimeElapsedText.text = "%02d:%02d:%02d" % [horas, minutos, segundos]
+	#$TimeElapsedText.text = "%02d:%02d:%02d.%02d" % [horas, minutos, segundos, centesimas]
+	#$TimeElapsedText.text = str(round(GlobalTime.tiempo))

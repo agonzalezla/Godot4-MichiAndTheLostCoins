@@ -5,6 +5,7 @@ func _ready() -> void:
 	# Permite usar el teclado en el menu principal
 	# Se fija el cursor en el boton de Start
 	$VBoxContainer/StartGameButton.grab_focus()
+	GlobalTime.pausar()  # Aseguramos que el tiempo no avance en el menú
 
 
 func _on_start_game_button_pressed() -> void:

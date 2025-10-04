@@ -5,6 +5,13 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.1.9] - 2025-10-04
+### Añadido
+- Agregado contador duracion partida
+
+### Actualizado
+- Nivel 3
+
 ## [0.1.8] - 2025-10-01
 ### Añadido
 - Creado el README.md

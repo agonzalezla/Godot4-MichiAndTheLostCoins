@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=4 uid="uid://chh68cxqwlndk"]
+[gd_scene load_steps=15 format=4 uid="uid://chh68cxqwlndk"]
 
 [ext_resource type="Texture2D" uid="uid://ccydne0yw5jj1" path="res://Assets/ThirdParty/Rocky Roads/Backgrounds/mountains_a.png" id="1_5rrr5"]
+[ext_resource type="Script" uid="uid://b8qse5fxo4ih8" path="res://Scripts/levels.gd" id="1_bdlbp"]
 [ext_resource type="Texture2D" uid="uid://bpoi1uyh6ogvx" path="res://Assets/ThirdParty/Rocky Roads/Deco/water_a_8frames.png" id="1_or7tv"]
 [ext_resource type="Texture2D" uid="uid://dm2dpoc0162ga" path="res://Assets/ThirdParty/Rocky Roads/Tilesets/tileset_forest.png" id="1_vsvp5"]
 [ext_resource type="PackedScene" uid="uid://dpmqtlaxbs6qw" path="res://Scenes/Player.tscn" id="2_8rbpu"]
@@ -67,6 +68,7 @@ size = Vector2(285, 12)
 
 [node name="Level1" type="Node2D"]
 texture_filter = 1
+script = ExtResource("1_bdlbp")
 
 [node name="Background" type="Node2D" parent="."]
 
