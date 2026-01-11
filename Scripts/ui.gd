@@ -52,6 +52,7 @@ func _process(delta: float) -> void:
 	var segundos = int(total) % 60
 	#var centesimas = int((total - int(total)) * 100)
 	
-	$TimeElapsedText.text = "%02d:%02d:%02d" % [horas, minutos, segundos]
+	#$TimeElapsedText.text = "%02d:%02d:%02d" % [horas, minutos, segundos]
+	$TimeElapsedText.text = "%02d:%02d" % [minutos, segundos]
 	#$TimeElapsedText.text = "%02d:%02d:%02d.%02d" % [horas, minutos, segundos, centesimas]
 	#$TimeElapsedText.text = str(round(GlobalTime.tiempo))
