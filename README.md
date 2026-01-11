@@ -1,4 +1,4 @@
-# Michi and The Lost Coins [![Licencia: CC BY-NC 4.0](https://img.shields.io/badge/Licencia-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/) ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-red)
+# Michi and The Lost Coins ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-red)
 
 
 **Michi and The Lost Coins** es un juego de plataformas 2D estilo pixel art, desarrollado con Godot 4.5.  
@@ -60,6 +60,12 @@ Este proyecto no cuenta con ningún tipo de financiación ni patrocinio externo.
 Está siendo desarrollado de forma independiente y en el tiempo libre del autor, lo que refuerza su carácter educativo y experimental.  
 
 El propósito no es generar beneficios económicos, sino aprender, compartir y experimentar con el motor Godot.  
+
+## Licencias
+
+- **Código fuente:** MIT License
+- **Assets (sprites, música, sonidos):** CC BY-NC 4.0
+- **Recursos de terceros:** ver `THIRD_PARTY_LICENSES.md`
 
 ## Conclusión
 Este proyecto es más que un simple videojuego: es una plataforma de aprendizaje para experimentar con Godot, practicar programación y explorar la creación de videojuegos.  
