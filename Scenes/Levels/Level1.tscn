@@ -1,18 +1,18 @@
 [gd_scene load_steps=15 format=4 uid="uid://chh68cxqwlndk"]
 
-[ext_resource type="Texture2D" uid="uid://ccydne0yw5jj1" path="res://Assets/ThirdParty/Rocky Roads/Backgrounds/mountains_a.png" id="1_5rrr5"]
-[ext_resource type="Script" uid="uid://b8qse5fxo4ih8" path="res://Scripts/levels.gd" id="1_bdlbp"]
-[ext_resource type="Texture2D" uid="uid://bpoi1uyh6ogvx" path="res://Assets/ThirdParty/Rocky Roads/Deco/water_a_8frames.png" id="1_or7tv"]
-[ext_resource type="Texture2D" uid="uid://dm2dpoc0162ga" path="res://Assets/ThirdParty/Rocky Roads/Tilesets/tileset_forest.png" id="1_vsvp5"]
-[ext_resource type="PackedScene" uid="uid://dpmqtlaxbs6qw" path="res://Scenes/Player.tscn" id="2_8rbpu"]
-[ext_resource type="PackedScene" uid="uid://cuu4uws6jrerb" path="res://Scenes/CoinGold.tscn" id="3_8rbpu"]
-[ext_resource type="PackedScene" uid="uid://x440uk0ewgho" path="res://Scenes/Camera2D.tscn" id="3_fuudy"]
-[ext_resource type="Texture2D" uid="uid://dr2u5ghfpqon0" path="res://Assets/ThirdParty/Rocky Roads/Objects/sign_arrow.png" id="3_ienac"]
-[ext_resource type="Script" uid="uid://ct4e5qxp5mtlq" path="res://Scripts/death_limits.gd" id="5_xylue"]
-[ext_resource type="Texture2D" uid="uid://cg1voksp4jcug" path="res://Assets/ThirdParty/Rocky Roads/Objects/sign.png" id="6_tj5wv"]
+[ext_resource type="Script" uid="uid://b8qse5fxo4ih8" path="res://Scripts/levels.gd" id="1_f3nwb"]
+[ext_resource type="PackedScene" uid="uid://x440uk0ewgho" path="res://Scenes/Camera2D.tscn" id="2_57lp3"]
+[ext_resource type="Texture2D" uid="uid://bpoi1uyh6ogvx" path="res://Assets/ThirdParty/Rocky Roads/Deco/water_a_8frames.png" id="3_n5ptj"]
+[ext_resource type="Texture2D" uid="uid://ccydne0yw5jj1" path="res://Assets/ThirdParty/Rocky Roads/Backgrounds/mountains_a.png" id="4_77iba"]
+[ext_resource type="Texture2D" uid="uid://dm2dpoc0162ga" path="res://Assets/ThirdParty/Rocky Roads/Tilesets/tileset_forest.png" id="5_67y36"]
+[ext_resource type="Texture2D" uid="uid://cg1voksp4jcug" path="res://Assets/ThirdParty/Rocky Roads/Objects/sign.png" id="6_hk4vc"]
+[ext_resource type="Texture2D" uid="uid://dr2u5ghfpqon0" path="res://Assets/ThirdParty/Rocky Roads/Objects/sign_arrow.png" id="7_wiu4c"]
+[ext_resource type="PackedScene" uid="uid://dpmqtlaxbs6qw" path="res://Scenes/Player.tscn" id="8_3hula"]
+[ext_resource type="PackedScene" uid="uid://cuu4uws6jrerb" path="res://Scenes/Collectibles/CoinGold.tscn" id="9_spq4p"]
+[ext_resource type="Script" uid="uid://ct4e5qxp5mtlq" path="res://Scripts/death_limits.gd" id="10_8fhce"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t7iv1"]
-texture = ExtResource("1_vsvp5")
+texture = ExtResource("5_67y36")
 2:0/0 = 0
 3:0/0 = 0
 5:0/0 = 0
@@ -68,9 +68,9 @@ size = Vector2(285, 12)
 
 [node name="Level1" type="Node2D"]
 texture_filter = 1
-script = ExtResource("1_bdlbp")
+script = ExtResource("1_f3nwb")
 
-[node name="Camera2D" parent="." instance=ExtResource("3_fuudy")]
+[node name="Camera2D" parent="." instance=ExtResource("2_57lp3")]
 position = Vector2(490, 347)
 zoom = Vector2(1.75, 1.75)
 
@@ -80,12 +80,12 @@ position = Vector2(213, -136)
 [node name="Sky" type="Sprite2D" parent="Background"]
 position = Vector2(288, 417)
 scale = Vector2(2.70293, 8.63316)
-texture = ExtResource("1_or7tv")
+texture = ExtResource("3_n5ptj")
 
 [node name="Mountains" type="Sprite2D" parent="Background"]
 position = Vector2(289, 518)
 scale = Vector2(2.67716, 2.37988)
-texture = ExtResource("1_5rrr5")
+texture = ExtResource("4_77iba")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(213, -136)
@@ -103,41 +103,41 @@ shape = SubResource("RectangleShape2D_tj5wv")
 
 [node name="Sprite2D" type="Sprite2D" parent="WoodenPosts/Area2D"]
 position = Vector2(38, 576)
-texture = ExtResource("6_tj5wv")
+texture = ExtResource("6_hk4vc")
 
 [node name="Area2D2" type="Area2D" parent="WoodenPosts"]
 
 [node name="Sprite2D" type="Sprite2D" parent="WoodenPosts/Area2D2"]
 position = Vector2(216, 528)
-texture = ExtResource("3_ienac")
+texture = ExtResource("7_wiu4c")
 
-[node name="Player" parent="." instance=ExtResource("2_8rbpu")]
+[node name="Player" parent="." instance=ExtResource("8_3hula")]
 position = Vector2(221, 448)
 
 [node name="Coins" type="Node2D" parent="."]
 position = Vector2(213, -136)
 
-[node name="CoinGold" parent="Coins" instance=ExtResource("3_8rbpu")]
+[node name="CoinGold" parent="Coins" instance=ExtResource("9_spq4p")]
 position = Vector2(76, 583)
 
-[node name="CoinGold2" parent="Coins" instance=ExtResource("3_8rbpu")]
+[node name="CoinGold2" parent="Coins" instance=ExtResource("9_spq4p")]
 position = Vector2(167, 557)
 
-[node name="CoinGold3" parent="Coins" instance=ExtResource("3_8rbpu")]
+[node name="CoinGold3" parent="Coins" instance=ExtResource("9_spq4p")]
 position = Vector2(297, 511)
 
-[node name="CoinGold4" parent="Coins" instance=ExtResource("3_8rbpu")]
+[node name="CoinGold4" parent="Coins" instance=ExtResource("9_spq4p")]
 position = Vector2(375, 543)
 
-[node name="CoinGold5" parent="Coins" instance=ExtResource("3_8rbpu")]
+[node name="CoinGold5" parent="Coins" instance=ExtResource("9_spq4p")]
 position = Vector2(376, 479)
 
-[node name="CoinGold6" parent="Coins" instance=ExtResource("3_8rbpu")]
+[node name="CoinGold6" parent="Coins" instance=ExtResource("9_spq4p")]
 position = Vector2(458, 509)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(213, -136)
-script = ExtResource("5_xylue")
+script = ExtResource("10_8fhce")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(383.5, 660)

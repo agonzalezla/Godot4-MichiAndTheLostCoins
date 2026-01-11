@@ -5,9 +5,9 @@ var totalCoinsInLevel = 0 # Numero de monedas totales en el nivel
 
 # Lista fija de niveles en orden
 var levels = [
-	"res://Scenes/Level1.tscn",
-	"res://Scenes/Level2.tscn",
-    "res://Scenes/Level3.tscn"
+	"res://Scenes/Levels/Level1.tscn",
+	"res://Scenes/Levels/Level2.tscn",
+    "res://Scenes/Levels/Level3.tscn"
 ]
 
 func _ready():
@@ -42,7 +42,7 @@ func go_to_next_level():
 	if index != -1 and index + 1 < levels.size():
 		get_tree().change_scene_to_file(levels[index + 1])
 	else:
-		get_tree().change_scene_to_file("res://Scenes/ComingSoon.tscn")
+		get_tree().change_scene_to_file("res://Scenes/UI/ComingSoon.tscn")
 		
 
 func _process(delta: float) -> void:

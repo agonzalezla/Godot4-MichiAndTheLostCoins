@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dw4isd3m81oyc"]
 
 [ext_resource type="Script" uid="uid://frflnsufxnvm" path="res://Scripts/coming_soon.gd" id="1_lanx7"]
-[ext_resource type="FontFile" uid="uid://bswwrtjdxfeye" path="res://Fonts/Mozilla_Text/MozillaText-VariableFont_wght.ttf" id="2_c4ul8"]
+[ext_resource type="FontFile" uid="uid://bswwrtjdxfeye" path="res://Assets/Fonts/Mozilla_Text/MozillaText-VariableFont_wght.ttf" id="2_c4ul8"]
 
 [node name="ComingSoon" type="Control"]
 layout_mode = 3

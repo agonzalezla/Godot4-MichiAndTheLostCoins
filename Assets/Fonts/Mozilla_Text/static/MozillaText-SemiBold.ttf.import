@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c8yugxyl50ont"
-path="res://.godot/imported/MozillaText-Regular.ttf-d58b1d80810f246644ebd1cc4983ecfe.fontdata"
+uid="uid://csr3fkcluka8k"
+path="res://.godot/imported/MozillaText-SemiBold.ttf-6f70481c9b25dd4cb8d45f71966ad3a1.fontdata"
 
 [deps]
 
-source_file="res://Fonts/Mozilla_Text/static/MozillaText-Regular.ttf"
-dest_files=["res://.godot/imported/MozillaText-Regular.ttf-d58b1d80810f246644ebd1cc4983ecfe.fontdata"]
+source_file="res://Assets/Fonts/Mozilla_Text/static/MozillaText-SemiBold.ttf"
+dest_files=["res://.godot/imported/MozillaText-SemiBold.ttf-6f70481c9b25dd4cb8d45f71966ad3a1.fontdata"]
 
 [params]
 

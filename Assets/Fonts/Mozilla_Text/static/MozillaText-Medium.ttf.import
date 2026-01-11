@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bgy1nlom2dp8k"
-path="res://.godot/imported/MozillaText-ExtraLight.ttf-b5992c06144686274aca3b74ba6ea164.fontdata"
+uid="uid://cti3g7af1lbfu"
+path="res://.godot/imported/MozillaText-Medium.ttf-c4f14d2cd55efafdbc58ec853f3cb9ae.fontdata"
 
 [deps]
 
-source_file="res://Fonts/Mozilla_Text/static/MozillaText-ExtraLight.ttf"
-dest_files=["res://.godot/imported/MozillaText-ExtraLight.ttf-b5992c06144686274aca3b74ba6ea164.fontdata"]
+source_file="res://Assets/Fonts/Mozilla_Text/static/MozillaText-Medium.ttf"
+dest_files=["res://.godot/imported/MozillaText-Medium.ttf-c4f14d2cd55efafdbc58ec853f3cb9ae.fontdata"]
 
 [params]
 

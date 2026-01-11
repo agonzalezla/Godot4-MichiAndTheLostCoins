@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bkvg8y13rf5vl" path="res://Assets/Mine/coinGold.png" id="1_ack0n"]
 [ext_resource type="Script" uid="uid://cejy2bfkjxqg5" path="res://Scripts/ui.gd" id="1_y74h5"]
-[ext_resource type="PackedScene" uid="uid://igjfuh0r210" path="res://Scenes/PauseMenu.tscn" id="3_yav78"]
+[ext_resource type="PackedScene" uid="uid://igjfuh0r210" path="res://Scenes/UI/PauseMenu.tscn" id="3_yav78"]
 [ext_resource type="Texture2D" uid="uid://dtkxb3r0ii0e3" path="res://Assets/Mine/hourglass.png" id="4_7gc2d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yav78"]

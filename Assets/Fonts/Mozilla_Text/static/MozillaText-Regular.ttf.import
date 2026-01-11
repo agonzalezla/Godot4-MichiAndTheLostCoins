@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bswwrtjdxfeye"
-path="res://.godot/imported/MozillaText-VariableFont_wght.ttf-517792d95609a310680035630929e278.fontdata"
+uid="uid://c8yugxyl50ont"
+path="res://.godot/imported/MozillaText-Regular.ttf-ef8dd268e0012a0a4cefa14b81db6bf3.fontdata"
 
 [deps]
 
-source_file="res://Fonts/Mozilla_Text/MozillaText-VariableFont_wght.ttf"
-dest_files=["res://.godot/imported/MozillaText-VariableFont_wght.ttf-517792d95609a310680035630929e278.fontdata"]
+source_file="res://Assets/Fonts/Mozilla_Text/static/MozillaText-Regular.ttf"
+dest_files=["res://.godot/imported/MozillaText-Regular.ttf-ef8dd268e0012a0a4cefa14b81db6bf3.fontdata"]
 
 [params]
 
