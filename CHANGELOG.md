@@ -5,6 +5,10 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.1] - 2026-01-21
+### Actualizado
+- Actualizado el fondo del menú principal
+
 ## [0.2.0] - 2026-01-11
 ### Actualizado
 - Cámara fija para mostrar el nivel completo y los objetos recolectables, permitiendo al jugador elegir libremente su recorrido

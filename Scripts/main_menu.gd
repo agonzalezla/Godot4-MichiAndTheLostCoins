@@ -1,5 +1,7 @@
 extends Control
 
+##@onready var options_popup: PopupPanel = $OptionsPopup
+@onready var options_menu = $OptionsMenu
 
 func _ready() -> void:
 	# Permite usar el teclado en el menu principal
@@ -14,3 +16,10 @@ func _on_start_game_button_pressed() -> void:
 
 func _on_quit_game_button_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_options_button_pressed() -> void:
+	#get_tree().change_scene_to_file("res://Scenes/UI/OptionsMenu.tscn")
+	##options_popup.popup_centered()
+	#options_menu.open_menu()
+	pass
