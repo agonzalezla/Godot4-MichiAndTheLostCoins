@@ -5,6 +5,10 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.2] - 2026-01-23
+### Añadido
+- Actualizada la escena "Coming Soon" para informar a los jugadores de futuros niveles
+
 ## [0.2.1] - 2026-01-21
 ### Actualizado
 - Actualizado el fondo del menú principal

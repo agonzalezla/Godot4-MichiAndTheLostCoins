@@ -20,23 +20,47 @@ grow_vertical = 2
 scale = Vector2(1, 0.9958164)
 script = ExtResource("1_k8um8")
 
-[node name="Sky" type="Sprite2D" parent="."]
-position = Vector2(574.5, 282)
-scale = Vector2(3.6614392, 1.7750567)
+[node name="Sky" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -49.20586
+offset_right = 320.0
+offset_bottom = 270.79413
+scale = Vector2(3.609053, 2.1326087)
 texture = ExtResource("2_ynupv")
 
-[node name="Mountains" type="Sprite2D" parent="."]
-position = Vector2(585, 154.647)
-scale = Vector2(3.72344, 2.78906)
+[node name="Mountains" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 60.252075
+offset_right = 317.0
+offset_bottom = 380.25208
+scale = Vector2(2.0791264, 1.5519552)
 texture = ExtResource("3_m48tj")
 
-[node name="Trees" type="Sprite2D" parent="."]
-position = Vector2(592, 350.4662)
+[node name="Mountains2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 661.0
+offset_top = 66.277275
+offset_right = 981.0
+offset_bottom = 386.27728
+scale = Vector2(1.5459647, 1.5258586)
+texture = ExtResource("3_m48tj")
+
+[node name="Trees" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -41.0
+offset_top = 63.26474
+offset_right = 279.0
+offset_bottom = 383.26474
 scale = Vector2(3.7595298, 1.82031)
 texture = ExtResource("5_ab04i")
 
-[node name="Clouds" type="Sprite2D" parent="."]
-position = Vector2(486.00003, 514.15094)
+[node name="Clouds" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -59.99997
+offset_top = 200.84027
+offset_right = 260.00003
+offset_bottom = 520.8403
 scale = Vector2(4.233526, 1.970334)
 texture = ExtResource("4_dvisc")
 
