@@ -5,8 +5,18 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.3] - 2026-01-24
+### Corregido
+- Solucionado el error que causaba referencias nulas en el contador de monedas.
+- Solucionado el problema de texto borroso en el panel de monedas.
+- Ajustadas las rutas de nodos del UI del contador de coins.
+
+### Actualizado
+- Mejorado el diseño del panel de monedas para una mejor legibilidad.
+- Ajustado el tamaño del icono de monedas sin usar escalado.
+
 ## [0.2.2] - 2026-01-23
-### Añadido
+### Actualizado
 - Actualizada la escena "Coming Soon" para informar a los jugadores de futuros niveles
 
 ## [0.2.1] - 2026-01-21

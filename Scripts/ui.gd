@@ -18,7 +18,7 @@ func _ready():
 	totalCoinsInLevel = coins_gold.size()
 	
 	# Mostrar contador inicial
-	$CoinsCollectedText.text = str(coins) + " / " + str(totalCoinsInLevel)
+	$PanelMonedas/MarginContainer/GridContainer/CoinsCollectedText.text = str(coins) + " / " + str(totalCoinsInLevel)
 	
 	# Conectar cada moneda al handler
 	for coin in coins_gold:
@@ -27,7 +27,7 @@ func _ready():
 
 func handlerCoinCollected():
 	coins += 1
-	$CoinsCollectedText.text = str(coins) + " / " + str(totalCoinsInLevel)
+	$PanelMonedas/MarginContainer/GridContainer/CoinsCollectedText.text = str(coins) + " / " + str(totalCoinsInLevel)
 	
 	# Cambiar de nivel al recoger todas las monedas
 	if coins == totalCoinsInLevel:
