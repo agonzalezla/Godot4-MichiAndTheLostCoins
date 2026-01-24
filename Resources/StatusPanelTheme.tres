@@ -5,3 +5,4 @@
 [resource]
 Label/font_sizes/font_size = 14
 Label/fonts/font = ExtResource("1_1x4pl")
+RichTextLabel/fonts/normal_font = ExtResource("1_1x4pl")

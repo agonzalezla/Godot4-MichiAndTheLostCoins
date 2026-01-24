@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://bkvg8y13rf5vl" path="res://Assets/Mine/coinGold.png" id="1_ack0n"]
 [ext_resource type="Script" uid="uid://cejy2bfkjxqg5" path="res://Scripts/ui.gd" id="1_y74h5"]
-[ext_resource type="Theme" uid="uid://hncvm40dr044" path="res://Resources/coins_panel_theme.tres" id="2_p3cch"]
+[ext_resource type="Theme" uid="uid://hncvm40dr044" path="res://Resources/StatusPanelTheme.tres" id="2_p3cch"]
 [ext_resource type="PackedScene" uid="uid://igjfuh0r210" path="res://Scenes/UI/PauseMenu.tscn" id="3_yav78"]
-[ext_resource type="Texture2D" uid="uid://dtkxb3r0ii0e3" path="res://Assets/Mine/hourglass.png" id="4_7gc2d"]
+[ext_resource type="Texture2D" uid="uid://bpg8hc8wcm7ox" path="res://Assets/Mine/hourglass32x32.png" id="5_p3cch"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yav78"]
 bg_color = Color(0.278431, 0.278431, 0.278431, 0.152941)
@@ -18,7 +18,7 @@ position = Vector2(575, 325)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="StatusPanel" type="Control" parent="CanvasLayer"]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 575.0
@@ -27,7 +27,7 @@ offset_right = 575.0
 offset_bottom = 325.0
 script = ExtResource("1_y74h5")
 
-[node name="PanelMonedas" type="PanelContainer" parent="CanvasLayer/Control"]
+[node name="PanelMonedas" type="PanelContainer" parent="CanvasLayer/StatusPanel"]
 layout_mode = 1
 offset_left = -574.00006
 offset_top = -323.0
@@ -37,28 +37,28 @@ scale = Vector2(1.348, 1)
 theme = ExtResource("2_p3cch")
 theme_override_styles/panel = SubResource("StyleBoxFlat_yav78")
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/PanelMonedas"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/StatusPanel/PanelMonedas"]
 layout_mode = 2
 theme_override_constants/margin_left = 1
 theme_override_constants/margin_top = 1
 theme_override_constants/margin_right = 1
 theme_override_constants/margin_bottom = 1
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/PanelMonedas/MarginContainer"]
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/StatusPanel/PanelMonedas/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/h_separation = 2
 columns = 2
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/PanelMonedas/MarginContainer/GridContainer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/StatusPanel/PanelMonedas/MarginContainer/GridContainer"]
 texture_filter = 1
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 texture = ExtResource("1_ack0n")
 metadata/_edit_use_anchors_ = true
 
-[node name="CoinsCollectedText" type="Label" parent="CanvasLayer/Control/PanelMonedas/MarginContainer/GridContainer"]
+[node name="CoinsCollectedText" type="Label" parent="CanvasLayer/StatusPanel/PanelMonedas/MarginContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "00"
@@ -66,55 +66,47 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="PauseMenu" parent="CanvasLayer/Control" instance=ExtResource("3_yav78")]
-process_mode = 3
-visible = false
-layout_mode = 1
-
-[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 453.0
-offset_top = -303.0
-offset_right = 1477.0
-offset_bottom = 721.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.025068775, 0.03166685)
-texture = ExtResource("4_7gc2d")
-metadata/_edit_use_anchors_ = true
-
-[node name="Label2" type="Label" parent="CanvasLayer/Control"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 476.0
-offset_top = -304.0
-offset_right = 516.0
-offset_bottom = -281.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.8579949, 1.4020542)
-text = ":"
-metadata/_edit_use_anchors_ = true
-
-[node name="TimeElapsedText" type="RichTextLabel" parent="CanvasLayer/Control"]
+[node name="TimePanel" type="PanelContainer" parent="CanvasLayer/StatusPanel"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 484.0
-offset_top = -295.00003
-offset_right = 524.0
-offset_bottom = -272.00003
+offset_left = 458.0
+offset_top = -318.0
+offset_right = 569.0
+offset_bottom = -286.0
 grow_horizontal = 0
-scale = Vector2(2.2168627, 0.7749081)
-theme_override_font_sizes/normal_font_size = 14
+theme = ExtResource("2_p3cch")
 metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/StatusPanel/TimePanel"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/StatusPanel/TimePanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = -2
+columns = 2
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/StatusPanel/TimePanel/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(2, 2)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_p3cch")
+metadata/_edit_use_anchors_ = true
+
+[node name="TimeElapsedText" type="RichTextLabel" parent="CanvasLayer/StatusPanel/TimePanel/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 14
+text = "00:00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="PauseMenu" parent="CanvasLayer/StatusPanel" instance=ExtResource("3_yav78")]
+process_mode = 3
+visible = false
+layout_mode = 1

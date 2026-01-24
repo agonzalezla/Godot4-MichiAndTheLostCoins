@@ -5,6 +5,13 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.4] - 2026-01-24
+### Corregido
+- Solucionado el error que impedia mostrar el valor del tiempo correctamente.
+
+### Actualizado
+- Mejorada la legibilidad y presentación del panel de tiempo transcurrido.
+
 ## [0.2.3] - 2026-01-24
 ### Corregido
 - Solucionado el error que causaba referencias nulas en el contador de monedas.
