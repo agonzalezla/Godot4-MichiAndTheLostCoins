@@ -6,7 +6,8 @@ extends Control
 func _ready() -> void:
 	# Permite usar el teclado en el menu principal
 	# Se fija el cursor en el boton de Start
-	$VBoxContainer/StartGameButton.grab_focus()
+	#$VBoxContainer/StartGameButton.grab_focus()
+	$PanelContainer/MarginContainer/VBoxContainer/StartGameButton.grab_focus()
 	GlobalTime.pausar()  # Aseguramos que el tiempo no avance en el menú
 
 

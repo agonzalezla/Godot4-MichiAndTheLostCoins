@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://x440uk0ewgho"]
+[gd_scene load_steps=8 format=3 uid="uid://x440uk0ewgho"]
 
 [ext_resource type="Texture2D" uid="uid://bkvg8y13rf5vl" path="res://Assets/Mine/coinGold.png" id="1_ack0n"]
 [ext_resource type="Script" uid="uid://cejy2bfkjxqg5" path="res://Scripts/ui.gd" id="1_y74h5"]
 [ext_resource type="Theme" uid="uid://hncvm40dr044" path="res://Resources/StatusPanelTheme.tres" id="2_p3cch"]
 [ext_resource type="PackedScene" uid="uid://igjfuh0r210" path="res://Scenes/UI/PauseMenu.tscn" id="3_yav78"]
 [ext_resource type="Texture2D" uid="uid://bpg8hc8wcm7ox" path="res://Assets/Mine/hourglass32x32.png" id="5_p3cch"]
+[ext_resource type="Texture2D" uid="uid://1vigohfim5j6" path="res://Assets/Mine/HeadCatDeath32x32.png" id="6_0erio"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yav78"]
 bg_color = Color(0.278431, 0.278431, 0.278431, 0.152941)
@@ -71,10 +72,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 458.0
-offset_top = -318.0
-offset_right = 569.0
-offset_bottom = -286.0
+offset_left = 460.0
+offset_top = -321.0
+offset_right = 571.0
+offset_bottom = -289.0
 grow_horizontal = 0
 theme = ExtResource("2_p3cch")
 metadata/_edit_use_anchors_ = true
@@ -110,3 +111,30 @@ metadata/_edit_use_anchors_ = true
 process_mode = 3
 visible = false
 layout_mode = 1
+
+[node name="DeathPanel" type="PanelContainer" parent="CanvasLayer/StatusPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -42.0
+offset_top = -322.0
+offset_right = 18.0
+offset_bottom = -290.0
+grow_horizontal = 2
+theme = ExtResource("2_p3cch")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/StatusPanel/DeathPanel"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/StatusPanel/DeathPanel/MarginContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/StatusPanel/DeathPanel/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("6_0erio")
+
+[node name="Label" type="Label" parent="CanvasLayer/StatusPanel/DeathPanel/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "0"

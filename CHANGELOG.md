@@ -5,6 +5,11 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.5] - 2026-01-25
+### Añadido
+- Añadido el sistema de conteo de muertes del jugador, con persistencia entre recargas de escena mediante un script global.
+- Integrado el contador en el panel de estado del HUD.
+
 ## [0.2.4] - 2026-01-24
 ### Corregido
 - Solucionado el error que impedia mostrar el valor del tiempo correctamente.

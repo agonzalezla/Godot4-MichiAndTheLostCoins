@@ -2,7 +2,7 @@ extends Control
 
 var coins = 0 # Numero de monedas recogidas por el jugador
 var totalCoinsInLevel = 0 # Numero de monedas totales en el nivel
-
+var deathPlayer = 0 # Numero de muertes del jugador
 # Lista fija de niveles en orden
 var levels = [
 	"res://Scenes/Levels/Level1.tscn",
@@ -52,7 +52,7 @@ func _process(delta: float) -> void:
 	var segundos = int(total) % 60
 	#var centesimas = int((total - int(total)) * 100)
 	
-	#$TimeElapsedText.text = "%02d:%02d:%02d" % [horas, minutos, segundos]
+	# Actualiza el tiempo transcurrido de juego
 	$TimePanel/MarginContainer/GridContainer/TimeElapsedText.text = "%02d:%02d:%02d" % [horas, minutos, segundos]
-	#$TimeElapsedText.text = "%02d:%02d:%02d.%02d" % [horas, minutos, segundos, centesimas]
-	#$TimeElapsedText.text = str(round(GlobalTime.tiempo))
+	# Actualiza las muertes del jugador
+	$DeathPanel/MarginContainer/GridContainer/Label.text = str(Global.deathPlayer)
