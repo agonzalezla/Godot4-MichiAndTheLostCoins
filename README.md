@@ -1,13 +1,13 @@
-# Michi and The Lost Coins 
+# Michi and The Lost Treasures
 ![Godot](https://img.shields.io/badge/Godot-4.5-478cbf?logo=godot-engine&logoColor=white)
 ![GDScript](https://img.shields.io/badge/Lenguaje-GDScript-orange)
 ![Licencia](https://img.shields.io/github/license/agonzalezla/Godot4-MichiAndTheLostCoins)
 ![Último commit](https://img.shields.io/github/last-commit/agonzalezla/Godot4-MichiAndTheLostCoins)
 ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-red)
 
-**Michi and The Lost Coins** es un juego de plataformas 2D estilo pixel art, desarrollado con Godot 4.5.  
+**Michi and The Lost Treasures** es un juego de plataformas 2D estilo pixel art, desarrollado con Godot 4.6.  
 
-Acompaña a Michi, un curioso gatito aventurero, en su búsqueda para recuperar las monedas perdidas en un mundo lleno de retos, enemigos y secretos ocultos.  
+Acompaña a Michi, un curioso gatito aventurero, en su búsqueda para recuperar todos los tesoros perdidos en un mundo lleno de retos, enemigos y secretos ocultos.
 
 ## Características principales
 - Gráficos pixel art coloridos y retro.  

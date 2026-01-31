@@ -18,7 +18,7 @@ https://creativecommons.org/licenses/by-nc/4.0/
 
 ## Atribución
 Autor: **Alberto González**  
-Proyecto: *Michi y las monedas perdidas*
+Proyecto: *Michi and The Lost Treasures*
 
 ## Excepciones
 Los assets de terceros mantienen su licencia original y se indican

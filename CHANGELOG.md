@@ -5,6 +5,14 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.8] - 2026-01-31
+### Cambiado
+- Se ha renombrado el juego de **Michi and The Lost Coins** a **Michi and The Lost Treasures** para reflejar la inclusión de nuevos objetos coleccionables más allá de las monedas.
+- Actualizados los textos y referencias del juego para usar el nuevo título.
+
+### Añadido
+- Soporte inicial para múltiples tipos de objetos coleccionables (tesoros, joyas y objetos especiales).
+
 ## [0.2.7] - 2026-01-31
 ### Corregido
 - Solucionado el error que impedía mostrar el tiempo total en la pantalla final debido a que se intentaba asignar un valor `float` directamente al Label.
