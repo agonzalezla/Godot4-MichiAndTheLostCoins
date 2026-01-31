@@ -1,8 +1,8 @@
 # Michi and The Lost Treasures
-![Godot](https://img.shields.io/badge/Godot-4.5-478cbf?logo=godot-engine&logoColor=white)
+![Godot](https://img.shields.io/badge/Godot-4.6-478cbf?logo=godot-engine&logoColor=white)
 ![GDScript](https://img.shields.io/badge/Lenguaje-GDScript-orange)
-![Licencia](https://img.shields.io/github/license/agonzalezla/Godot4-MichiAndTheLostCoins)
-![Último commit](https://img.shields.io/github/last-commit/agonzalezla/Godot4-MichiAndTheLostCoins)
+![Licencia](https://img.shields.io/github/license/agonzalezla/MichiAndTheLostTreasures)
+![Último commit](https://img.shields.io/github/last-commit/agonzalezla/MichiAndTheLostTreasures)
 ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-red)
 
 **Michi and The Lost Treasures** es un juego de plataformas 2D estilo pixel art, desarrollado con Godot 4.6.  
