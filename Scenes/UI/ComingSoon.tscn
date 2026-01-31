@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dw4isd3m81oyc"]
+[gd_scene format=3 uid="uid://dw4isd3m81oyc"]
 
 [ext_resource type="Script" uid="uid://frflnsufxnvm" path="res://Scripts/coming_soon.gd" id="1_lanx7"]
 [ext_resource type="Texture2D" uid="uid://dcmrl5p1pf7vy" path="res://Assets/ThirdParty/BG_DesertMountains/background1.png" id="2_w08ps"]
@@ -9,8 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://b18qv0ycmj8ho" path="res://Assets/ThirdParty/BG_DesertMountains/cloud4.png" id="7_c5msm"]
 [ext_resource type="Texture2D" uid="uid://did7ubqsv0ji7" path="res://Assets/ThirdParty/BG_DesertMountains/cloud7.png" id="8_7og33"]
 [ext_resource type="FontFile" uid="uid://di7f46rivl4ec" path="res://Assets/Fonts/Gravitas_One/GravitasOne-Regular.ttf" id="9_w08ps"]
+[ext_resource type="Texture2D" uid="uid://1vigohfim5j6" path="res://Assets/Mine/HeadCatDeath32x32.png" id="10_rkwqu"]
+[ext_resource type="Texture2D" uid="uid://bpg8hc8wcm7ox" path="res://Assets/Mine/hourglass32x32.png" id="11_4kdqx"]
 
-[node name="ComingSoon" type="Control"]
+[node name="ComingSoon" type="Control" unique_id=2050000187]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lanx7")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." unique_id=1828538609]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +30,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_w08ps")
 
-[node name="Mountains" type="TextureRect" parent="."]
+[node name="Mountains" type="TextureRect" parent="." unique_id=902223685]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -39,7 +41,7 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("3_kvbdn")
 
-[node name="Cloud" type="TextureRect" parent="."]
+[node name="Cloud" type="TextureRect" parent="." unique_id=1257898034]
 layout_mode = 0
 offset_left = 31.0
 offset_top = 229.0
@@ -47,7 +49,7 @@ offset_right = 77.0
 offset_bottom = 269.0
 texture = ExtResource("4_rkwqu")
 
-[node name="Cloud1" type="TextureRect" parent="."]
+[node name="Cloud1" type="TextureRect" parent="." unique_id=341715075]
 layout_mode = 0
 offset_left = 31.0
 offset_top = 229.0
@@ -55,7 +57,7 @@ offset_right = 77.0
 offset_bottom = 269.0
 texture = ExtResource("5_4kdqx")
 
-[node name="Cloud2" type="TextureRect" parent="."]
+[node name="Cloud2" type="TextureRect" parent="." unique_id=914406653]
 layout_mode = 0
 offset_left = 1017.0
 offset_top = 257.0
@@ -63,7 +65,7 @@ offset_right = 1072.0
 offset_bottom = 297.0
 texture = ExtResource("6_0lq73")
 
-[node name="Cloud3" type="TextureRect" parent="."]
+[node name="Cloud3" type="TextureRect" parent="." unique_id=1747789915]
 layout_mode = 0
 offset_left = 220.0
 offset_top = 275.0
@@ -71,7 +73,7 @@ offset_right = 381.0
 offset_bottom = 329.0
 texture = ExtResource("7_c5msm")
 
-[node name="Cloud4" type="TextureRect" parent="."]
+[node name="Cloud4" type="TextureRect" parent="." unique_id=1932666254]
 layout_mode = 0
 offset_left = 688.0
 offset_top = 147.0
@@ -79,7 +81,7 @@ offset_right = 869.0
 offset_bottom = 213.0
 texture = ExtResource("8_7og33")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=771162540]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -89,18 +91,22 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="QuitGameButton" type="Button" parent="VBoxContainer"]
+[node name="MainMenu" type="Button" parent="VBoxContainer" unique_id=1158579942]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="QuitGameButton" type="Button" parent="VBoxContainer" unique_id=832363391]
 layout_mode = 2
 text = "EXIT"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=107448739]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 96.0
 grow_horizontal = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer2"]
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer2" unique_id=608881899]
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 0
@@ -110,7 +116,7 @@ text = "NEW LEVELS "
 fit_content = true
 horizontal_alignment = 1
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer2"]
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer2" unique_id=1091281173]
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("9_w08ps")
 theme_override_font_sizes/normal_font_size = 55
@@ -118,7 +124,7 @@ text = "COMING SOON"
 fit_content = true
 horizontal_alignment = 1
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+[node name="VBoxContainer3" type="VBoxContainer" parent="." unique_id=1305995105]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -127,7 +133,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer3"]
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer3" unique_id=2061977323]
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("9_w08ps")
 theme_override_font_sizes/normal_font_size = 55
@@ -135,4 +141,40 @@ text = "THANKS FOR PLAYING"
 fit_content = true
 horizontal_alignment = 1
 
+[node name="PlayerStatisticsPanel" type="PanelContainer" parent="." unique_id=415336419]
+layout_mode = 0
+offset_left = 526.0
+offset_top = 468.0
+offset_right = 626.0
+offset_bottom = 536.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PlayerStatisticsPanel" unique_id=2120281948]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlayerStatisticsPanel/MarginContainer" unique_id=747111781]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlayerStatisticsPanel/MarginContainer/VBoxContainer" unique_id=456029448]
+layout_mode = 2
+
+[node name="DeathTexture" type="TextureRect" parent="PlayerStatisticsPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1693869468]
+layout_mode = 2
+texture = ExtResource("10_rkwqu")
+
+[node name="DeathLabel" type="Label" parent="PlayerStatisticsPanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=752874399]
+layout_mode = 2
+text = "000"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PlayerStatisticsPanel/MarginContainer/VBoxContainer" unique_id=1047982814]
+layout_mode = 2
+
+[node name="TimeTexture" type="TextureRect" parent="PlayerStatisticsPanel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1142241898]
+layout_mode = 2
+texture = ExtResource("11_4kdqx")
+
+[node name="TimeLabel" type="Label" parent="PlayerStatisticsPanel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=320437728]
+layout_mode = 2
+text = "00:00:00"
+
+[connection signal="pressed" from="VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitGameButton" to="." method="_on_quit_game_button_pressed"]

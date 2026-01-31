@@ -5,6 +5,16 @@ Todas las versiones importantes de este proyecto se documentan aquí.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y el proyecto sigue [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.7] - 2026-01-31
+### Corregido
+- Solucionado el error que impedía mostrar el tiempo total en la pantalla final debido a que se intentaba asignar un valor `float` directamente al Label.
+
+### Mejorado
+- Añadida función de formateo del tiempo en `GlobalTime` para mostrar el tiempo total en formato `mm:ss:ms` en la pantalla final del juego.
+
+### Mantenimiento
+- Actualizado el motor Godot de la versión 4.5.1 a la 4.6.
+
 ## [0.2.6] - 2026-01-25
 ### Corregido
 - Solucionado el error que impedía registrar las muertes del jugador al caer en trampas.

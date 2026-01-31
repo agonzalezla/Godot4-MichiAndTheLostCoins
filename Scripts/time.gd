@@ -15,3 +15,10 @@ func pausar() -> void:
 
 func reanudar() -> void:
 	tiempoCorriendo = true
+
+func get_formatted_time() -> String:
+	var t = tiempo
+	var minutos = int(t / 60)
+	var segundos = int(t) % 60
+	var ms = int((t - int(t)) * 100)
+	return "%02d:%02d:%02d" % [minutos, segundos, ms]

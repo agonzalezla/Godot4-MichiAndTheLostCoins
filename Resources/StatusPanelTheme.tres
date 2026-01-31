@@ -1,8 +1,13 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://hncvm40dr044"]
+[gd_resource type="Theme" format=3 uid="uid://hncvm40dr044"]
 
 [ext_resource type="FontFile" uid="uid://dbnrp53e4yxep" path="res://Assets/Fonts/BD_Cartoon_Shout.ttf" id="1_1x4pl"]
+[ext_resource type="Texture2D" uid="uid://de7abbdtv7qwg" path="res://Assets/ThirdParty/UI/panel.png" id="2_s3625"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pvt7u"]
+texture = ExtResource("2_s3625")
 
 [resource]
 Label/font_sizes/font_size = 14
 Label/fonts/font = ExtResource("1_1x4pl")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_pvt7u")
 RichTextLabel/fonts/normal_font = ExtResource("1_1x4pl")
